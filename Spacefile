@@ -1,0 +1,9 @@
+v: 0
+micros:
+  - name: tp1_data
+    src: .
+    engine: python3.9
+    primary: true
+    run: gunicorn main:app
+    dev: .venv/bin/flask --app main run
+    public: true
